@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply text-gray-900 bg-gray-50;
+  }
+}
+
+@layer components {
+  .prose {
+    @apply max-w-none text-gray-700;
+  }
+  
+  .prose h1, .prose h2, .prose h3, .prose h4 {
+    @apply text-gray-900 font-bold;
+  }
+  
+  .prose p {
+    @apply mb-4;
+  }
+  
+  input, textarea {
+    @apply border-gray-300 rounded-md shadow-sm;
+  }
+  
+  input:focus, textarea:focus {
+    @apply ring-2 ring-blue-500 border-transparent;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+}
